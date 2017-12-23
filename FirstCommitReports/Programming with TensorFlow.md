@@ -1,4 +1,4 @@
-# TensorFlow Programming
+# Programming with TensorFlow
 
 TensorFlow is an open source software library for numerical computation using data flow graphs that enables machine learning practitioners to do more data-intensive computing. It provides some robust implementations of widely used deep learning algorithms. Nodes in the flow graph represent mathematical operations. On the other hand, the edges represent multidimensional tensors that ensure communication between edges and nodes. TensorFlow offers you a very flexible architecture that enables you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
 
@@ -31,7 +31,7 @@ When performing an operation, for example training a neural network, or the sum 
 
 The TensorFlow implementation defines *control dependencies* to enforce orderings between otherwise independent operations as a way of controlling peak memory usage. A computational graph is basically like a *flow chart*; the following is the computational graph for a simple computation: *z=d×c=(a+b) ×c*. 
 
-![avatar](/image/graph.png)
+![image](/image/graph.png)
 
 ## Programming Model
 
@@ -58,7 +58,7 @@ print(y_output)
 
 For this example, the computation graph will be the following:
 
-![avatar](/image/constructed.png)
+![image](/image/constructed.png)
 
 ## Data Model
 
