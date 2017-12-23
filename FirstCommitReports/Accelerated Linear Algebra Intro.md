@@ -17,7 +17,7 @@ So XLA takes an input language called HLO IR or just High-Level Optimizer (HLO).
 
 The following diagram shows the compilation process in XLA: 
 
-![image](/image/XLA.png)
+![image](image/XLA.png)
 
 TensorFlow uses HLO in order to provide target-independent code, so in this step TensorFlow is only trying to optimize your program without any target constraints, then TensorFlow uses another HLO in order to emit target dependent optimized and analyzed code that will be finally fed to XLA backend for target-specific code generation. 
 
