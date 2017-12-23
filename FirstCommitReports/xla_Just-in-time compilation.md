@@ -1,4 +1,4 @@
-#Just-in-time compilation
+# Just-in-time compilation
 
 ## Just In Time -JIT introduction
 
