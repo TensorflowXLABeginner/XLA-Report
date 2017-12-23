@@ -31,7 +31,7 @@ When performing an operation, for example training a neural network, or the sum 
 
 The TensorFlow implementation defines *control dependencies* to enforce orderings between otherwise independent operations as a way of controlling peak memory usage. A computational graph is basically like a *flow chart*; the following is the computational graph for a simple computation: *z=d×c=(a+b) ×c*. 
 
-![image](/image/graph.png)
+![image](image/graph.png)
 
 ## Programming Model
 
@@ -58,7 +58,7 @@ print(y_output)
 
 For this example, the computation graph will be the following:
 
-![image](/image/constructed.png)
+![image](image/constructed.png)
 
 ## Data Model
 
