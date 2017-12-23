@@ -71,6 +71,14 @@ What's special about this example is that we are putting it explicitly onto the 
 After running the previous code snippet you will see just a couple of assembly instructions get emitted and the special thing about these instructions is that there are no loops because XLA knew that you are only going to multiply four numbers. So the emitted assembly instructions is specialized and optimized for the graph or the program that you fed in with
 your TensorFlow expression.
 
-Also, you put the previous code snippet explicitly onto the XLA GPU device, but we are not
-going to cover this here. So as we mentioned that XLA can work for CPU and GPU in a
-standard TensorFlow shell.
+Also, you put the previous code snippet explicitly onto the XLA GPU device, but we are not going to cover this here. So as we mentioned that XLA can work for CPU and GPU in a standard TensorFlow shell.
+
+## JIT compilation
+
+The main thing about JIT compilation is that the programs you get the program to be built at runtime so when you type a TensorFlow expression and press enter, you don't want to sit for a while to figure out how to compile so you will also get low-overhead compilation. As you saw in the previous example that you go the assembly instructions generated just by pressing Enter.
+Another advantage of JIT is that you can bind variables later in the code.
+For example, you don't have to specify the batch size at the very beginning of your code. You want to able to specify the batch size right when you find out what you want it to be.
+So if we looked at the basic TensorFlow level block diagram, we can see the TensorFlow
+core and XLA comes into the TensorFlow ecosystem in the bottom right.
+
+![TensorFlow level block diagram](image/lifeblock.png)
