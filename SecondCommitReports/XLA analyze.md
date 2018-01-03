@@ -1,4 +1,4 @@
-# XLA source code analyze
+# XLA analyze
 
 Basically, XLA involves in `tensorflow/compiler/tf2xla` and `tensorflow/compiler/xla` these two directories.
 
