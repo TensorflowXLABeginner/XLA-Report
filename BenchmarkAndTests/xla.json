@@ -1,0 +1,819 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/device:GPU:0/stream:14 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/device:GPU:0/stream:14 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 3,
+            "args": {
+                "name": "/device:GPU:0/memcpy Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 4,
+            "args": {
+                "name": "/device:GPU:0/memcpy Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 5,
+            "args": {
+                "name": "/device:GPU:0/stream:all Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 6,
+            "args": {
+                "name": "/device:GPU:0/stream:all Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 7,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 8,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 9,
+            "args": {
+                "name": "/device:GPU:0/stream:13 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 10,
+            "args": {
+                "name": "/device:GPU:0/stream:13 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 11,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 12,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1515888238577847,
+            "dur": 29,
+            "args": {
+                "name": "edge_17__arg_Placeholder_0_0",
+                "op": "MEMCPYHtoD"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1515888238577977,
+            "dur": 1,
+            "args": {
+                "name": "edge_18__arg_Placeholder_1_0_1",
+                "op": "MEMCPYHtoD"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 3,
+            "tid": 0,
+            "ts": 1515888238577847,
+            "dur": 29,
+            "args": {
+                "name": "edge_17__arg_Placeholder_0_0",
+                "op": "MEMCPYHtoD"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 3,
+            "tid": 0,
+            "ts": 1515888238577977,
+            "dur": 1,
+            "args": {
+                "name": "edge_18__arg_Placeholder_1_0_1",
+                "op": "MEMCPYHtoD"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 3,
+            "tid": 0,
+            "ts": 1515888238578563,
+            "dur": 2,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578230,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578244,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578254,
+            "dur": 7,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578264,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578374,
+            "dur": 74,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578452,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578458,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578465,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578472,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578479,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578486,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578493,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578500,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578506,
+            "dur": 6,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578535,
+            "dur": 26,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ApplyGradientDescent",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578683,
+            "dur": 5,
+            "args": {
+                "name": "GradientDescent/update_Variable_1/ApplyGradientDescent",
+                "op": "ApplyGradientDescent"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ApplyGradientDescent",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1515888238578731,
+            "dur": 4,
+            "args": {
+                "name": "GradientDescent/update_Variable/ApplyGradientDescent",
+                "op": "ApplyGradientDescent"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1515888238577523,
+            "dur": 43,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1515888238577600,
+            "dur": 46,
+            "args": {
+                "name": "_arg_Placeholder_1_0_1",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1515888238577656,
+            "dur": 6,
+            "args": {
+                "name": "_arg_Placeholder_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578230,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578244,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578254,
+            "dur": 7,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578264,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578374,
+            "dur": 74,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578452,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578458,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578465,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578472,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578479,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578486,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578493,
+            "dur": 4,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578500,
+            "dur": 3,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578506,
+            "dur": 6,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578535,
+            "dur": 26,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ApplyGradientDescent",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578683,
+            "dur": 5,
+            "args": {
+                "name": "GradientDescent/update_Variable_1/ApplyGradientDescent",
+                "op": "ApplyGradientDescent"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ApplyGradientDescent",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1515888238578731,
+            "dur": 4,
+            "args": {
+                "name": "GradientDescent/update_Variable/ApplyGradientDescent",
+                "op": "ApplyGradientDescent"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 9,
+            "tid": 1,
+            "ts": 1515888238578563,
+            "dur": 2,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238577523,
+            "dur": 42,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238577610,
+            "dur": 37,
+            "args": {
+                "name": "GradientDescent/learning_rate",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238577651,
+            "dur": 16,
+            "args": {
+                "name": "Variable_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238577669,
+            "dur": 29,
+            "args": {
+                "name": "Variable",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_XlaLaunch",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238578116,
+            "dur": 503,
+            "args": {
+                "name": "cluster_0/_0/_1",
+                "op": "_XlaLaunch",
+                "input0": "Variable",
+                "input1": "Variable_1",
+                "input2": "_arg_Placeholder_0_0/_1",
+                "input3": "_arg_Placeholder_1_0_1/_3"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "_arg_Placeholder_0_0",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1515888238577662,
+            "id": 0
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "_arg_Placeholder_0_0",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238578116,
+            "id": 0
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "_arg_Placeholder_1_0_1",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1515888238577646,
+            "id": 1
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "_arg_Placeholder_1_0_1",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238578116,
+            "id": 1
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ApplyGradientDescent",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238578643,
+            "dur": 62,
+            "args": {
+                "name": "GradientDescent/update_Variable_1/ApplyGradientDescent",
+                "op": "ApplyGradientDescent",
+                "input0": "Variable_1",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "cluster_0/_0/_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ApplyGradientDescent",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238578708,
+            "dur": 26,
+            "args": {
+                "name": "GradientDescent/update_Variable/ApplyGradientDescent",
+                "op": "ApplyGradientDescent",
+                "input0": "Variable",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "cluster_0/_0/_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1515888238578737,
+            "dur": 4,
+            "args": {
+                "name": "GradientDescent",
+                "op": "NoOp",
+                "input0": "^GradientDescent/update_Variable/ApplyGradientDescent",
+                "input1": "^GradientDescent/update_Variable_1/ApplyGradientDescent"
+            }
+        }
+    ]
+}

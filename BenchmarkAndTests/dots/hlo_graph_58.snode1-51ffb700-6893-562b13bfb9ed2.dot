@@ -1,0 +1,260 @@
+digraph G {
+rankdir = TB;
+compound = true;
+label = <<b>simplification: after tuple-simplifier, before simplify-while-loops<br/>Computation cluster_1__XlaCompiledKernel_true__XlaNumConstantArgs_0__XlaNumResourceArgs_0_.v28</b>>;
+labelloc = t;
+// Disable the tooltip.  Interestingly, "" doesn't work!
+tooltip = " ";
+// DOT graphs accept a stylesheet as a URI.  So naturally, an inline
+// stylesheet is a data URI!
+stylesheet="
+  data:text/css,
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+  svg text {
+    font-family: 'Roboto';
+    font-size: 12px;
+  }
+
+    #node22:hover ~ #edge24 text { fill: #1976d2; }
+  #node22:hover ~ #edge24 path { stroke: #1976d2; stroke-width: .2em; }
+  #node22:hover ~ #edge24 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node24:hover ~ #edge24 text { fill: #d32f2f; }
+  #node24:hover ~ #edge24 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node24:hover ~ #edge24 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node6:hover ~ #edge8 text { fill: #1976d2; }
+  #node6:hover ~ #edge8 path { stroke: #1976d2; stroke-width: .2em; }
+  #node6:hover ~ #edge8 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node9:hover ~ #edge8 text { fill: #d32f2f; }
+  #node9:hover ~ #edge8 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node9:hover ~ #edge8 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node8:hover ~ #edge9 text { fill: #1976d2; }
+  #node8:hover ~ #edge9 path { stroke: #1976d2; stroke-width: .2em; }
+  #node8:hover ~ #edge9 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node9:hover ~ #edge9 text { fill: #d32f2f; }
+  #node9:hover ~ #edge9 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node9:hover ~ #edge9 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node19:hover ~ #edge20 text { fill: #1976d2; }
+  #node19:hover ~ #edge20 path { stroke: #1976d2; stroke-width: .2em; }
+  #node19:hover ~ #edge20 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node20:hover ~ #edge20 text { fill: #d32f2f; }
+  #node20:hover ~ #edge20 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node20:hover ~ #edge20 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node3:hover ~ #edge4 text { fill: #1976d2; }
+  #node3:hover ~ #edge4 path { stroke: #1976d2; stroke-width: .2em; }
+  #node3:hover ~ #edge4 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node6:hover ~ #edge4 text { fill: #d32f2f; }
+  #node6:hover ~ #edge4 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node6:hover ~ #edge4 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node4:hover ~ #edge3 text { fill: #1976d2; }
+  #node4:hover ~ #edge3 path { stroke: #1976d2; stroke-width: .2em; }
+  #node4:hover ~ #edge3 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node5:hover ~ #edge3 text { fill: #d32f2f; }
+  #node5:hover ~ #edge3 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node5:hover ~ #edge3 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node2:hover ~ #edge2 text { fill: #1976d2; }
+  #node2:hover ~ #edge2 path { stroke: #1976d2; stroke-width: .2em; }
+  #node2:hover ~ #edge2 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node3:hover ~ #edge2 text { fill: #d32f2f; }
+  #node3:hover ~ #edge2 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node3:hover ~ #edge2 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node9:hover ~ #edge10 text { fill: #1976d2; }
+  #node9:hover ~ #edge10 path { stroke: #1976d2; stroke-width: .2em; }
+  #node9:hover ~ #edge10 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node10:hover ~ #edge10 text { fill: #d32f2f; }
+  #node10:hover ~ #edge10 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node10:hover ~ #edge10 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node10:hover ~ #edge11 text { fill: #1976d2; }
+  #node10:hover ~ #edge11 path { stroke: #1976d2; stroke-width: .2em; }
+  #node10:hover ~ #edge11 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node12:hover ~ #edge11 text { fill: #d32f2f; }
+  #node12:hover ~ #edge11 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node12:hover ~ #edge11 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node13:hover ~ #edge14 text { fill: #1976d2; }
+  #node13:hover ~ #edge14 path { stroke: #1976d2; stroke-width: .2em; }
+  #node13:hover ~ #edge14 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node14:hover ~ #edge14 text { fill: #d32f2f; }
+  #node14:hover ~ #edge14 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node14:hover ~ #edge14 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node1:hover ~ #edge1 text { fill: #1976d2; }
+  #node1:hover ~ #edge1 path { stroke: #1976d2; stroke-width: .2em; }
+  #node1:hover ~ #edge1 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node3:hover ~ #edge1 text { fill: #d32f2f; }
+  #node3:hover ~ #edge1 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node3:hover ~ #edge1 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node5:hover ~ #edge5 text { fill: #1976d2; }
+  #node5:hover ~ #edge5 path { stroke: #1976d2; stroke-width: .2em; }
+  #node5:hover ~ #edge5 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node6:hover ~ #edge5 text { fill: #d32f2f; }
+  #node6:hover ~ #edge5 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node6:hover ~ #edge5 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node11:hover ~ #edge12 text { fill: #1976d2; }
+  #node11:hover ~ #edge12 path { stroke: #1976d2; stroke-width: .2em; }
+  #node11:hover ~ #edge12 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node12:hover ~ #edge12 text { fill: #d32f2f; }
+  #node12:hover ~ #edge12 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node12:hover ~ #edge12 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node17:hover ~ #edge18 text { fill: #1976d2; }
+  #node17:hover ~ #edge18 path { stroke: #1976d2; stroke-width: .2em; }
+  #node17:hover ~ #edge18 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node19:hover ~ #edge18 text { fill: #d32f2f; }
+  #node19:hover ~ #edge18 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node19:hover ~ #edge18 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node12:hover ~ #edge13 text { fill: #1976d2; }
+  #node12:hover ~ #edge13 path { stroke: #1976d2; stroke-width: .2em; }
+  #node12:hover ~ #edge13 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node14:hover ~ #edge13 text { fill: #d32f2f; }
+  #node14:hover ~ #edge13 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node14:hover ~ #edge13 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node14:hover ~ #edge15 text { fill: #1976d2; }
+  #node14:hover ~ #edge15 path { stroke: #1976d2; stroke-width: .2em; }
+  #node14:hover ~ #edge15 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node16:hover ~ #edge15 text { fill: #d32f2f; }
+  #node16:hover ~ #edge15 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node16:hover ~ #edge15 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node21:hover ~ #edge23 text { fill: #1976d2; }
+  #node21:hover ~ #edge23 path { stroke: #1976d2; stroke-width: .2em; }
+  #node21:hover ~ #edge23 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node23:hover ~ #edge23 text { fill: #d32f2f; }
+  #node23:hover ~ #edge23 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node23:hover ~ #edge23 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node15:hover ~ #edge16 text { fill: #1976d2; }
+  #node15:hover ~ #edge16 path { stroke: #1976d2; stroke-width: .2em; }
+  #node15:hover ~ #edge16 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node16:hover ~ #edge16 text { fill: #d32f2f; }
+  #node16:hover ~ #edge16 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node16:hover ~ #edge16 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node7:hover ~ #edge7 text { fill: #1976d2; }
+  #node7:hover ~ #edge7 path { stroke: #1976d2; stroke-width: .2em; }
+  #node7:hover ~ #edge7 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node8:hover ~ #edge7 text { fill: #d32f2f; }
+  #node8:hover ~ #edge7 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node8:hover ~ #edge7 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node16:hover ~ #edge17 text { fill: #1976d2; }
+  #node16:hover ~ #edge17 path { stroke: #1976d2; stroke-width: .2em; }
+  #node16:hover ~ #edge17 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node17:hover ~ #edge17 text { fill: #d32f2f; }
+  #node17:hover ~ #edge17 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node17:hover ~ #edge17 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node6:hover ~ #edge6 text { fill: #1976d2; }
+  #node6:hover ~ #edge6 path { stroke: #1976d2; stroke-width: .2em; }
+  #node6:hover ~ #edge6 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node7:hover ~ #edge6 text { fill: #d32f2f; }
+  #node7:hover ~ #edge6 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node7:hover ~ #edge6 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node18:hover ~ #edge19 text { fill: #1976d2; }
+  #node18:hover ~ #edge19 path { stroke: #1976d2; stroke-width: .2em; }
+  #node18:hover ~ #edge19 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node19:hover ~ #edge19 text { fill: #d32f2f; }
+  #node19:hover ~ #edge19 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node19:hover ~ #edge19 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node20:hover ~ #edge21 text { fill: #1976d2; }
+  #node20:hover ~ #edge21 path { stroke: #1976d2; stroke-width: .2em; }
+  #node20:hover ~ #edge21 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node21:hover ~ #edge21 text { fill: #d32f2f; }
+  #node21:hover ~ #edge21 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node21:hover ~ #edge21 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+  #node23:hover ~ #edge22 text { fill: #1976d2; }
+  #node23:hover ~ #edge22 path { stroke: #1976d2; stroke-width: .2em; }
+  #node23:hover ~ #edge22 polygon { fill: #1976d2; stroke: #1976d2; stroke-width: .2em; }
+
+  #node22:hover ~ #edge22 text { fill: #d32f2f; }
+  #node22:hover ~ #edge22 path { stroke: #d32f2f; stroke-width: .2em; }
+  #node22:hover ~ #edge22 polygon { fill: #d32f2f; stroke: #d32f2f; stroke-width: .2em; }
+
+"
+
+140175364415776 [label=<<b>Parameter 2</b><br/>f32[10000,784]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbae82", fillcolor="#ffe0b2"];
+140175364416752 [label=<<b>Parameter 1</b><br/>f32[784,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbae82", fillcolor="#ffe0b2"];
+140175364430736 [label=<<b>dot</b><br/>lhs_contracting_dims={1}, rhs_contracting_dims={0}<br/>f32[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="white", color="#003c8f", fillcolor="#1565c0"];
+140175364432208 [label=<<b>Parameter 0</b><br/>f32[10]>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbae82", fillcolor="#ffe0b2"];
+140175364471792 [label=<<b>broadcast</b><br/>dimensions={1}<br/>f32[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#97b498", fillcolor="#c8e6c9"];
+140175364472528 [label=<<b>add.1</b><br/>f32[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364474000 [label=<<b>reduce</b><br/>Subcomputation: <b>max</b><br/>dimensions={1}<br/>f32[10000]<br/><b>operand 1</b> = -inf (f32[])>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#af8eb5", fillcolor="#e1bee7"];
+140175364474736 [label=<<b>broadcast.1</b><br/>dimensions={0}<br/>f32[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#97b498", fillcolor="#c8e6c9"];
+140175364475472 [label=<<b>equal-to</b><br/>pred[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364476208 [label=<<b>convert</b><br/>s64[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364477680 [label=<<b>broadcast.2</b><br/>dimensions={}<br/>s64[10000,10]{1,0}<br/><b>operand</b> = 63 (s64[])>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#97b498", fillcolor="#c8e6c9"];
+140175364478416 [label=<<b>shift-left</b><br/>s64[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364479344 [label=<<b>broadcast.3</b><br/>dimensions={}<br/>s64[10000,10]{1,0}<br/><b>operand</b> = 63 (s64[])>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#97b498", fillcolor="#c8e6c9"];
+140175364480544 [label=<<b>shift-right-arithmetic</b><br/>s64[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364482832 [label=<<b>broadcast.4</b><br/>dimensions={1}<br/>s64[10000,10]{1,0}<br/><b>operand</b> = constant.4 s64[10]>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#97b498", fillcolor="#c8e6c9"];
+140175364484032 [label=<<b>and</b><br/>s64[10000,10]{1,0}>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364485072 [label=<<b>reduce.1</b><br/>Subcomputation: <b>max</b><br/>dimensions={1}<br/>s64[10000]<br/><b>operand 1</b> = -9223372036854775808 (s64[])>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#af8eb5", fillcolor="#e1bee7"];
+140175364486464 [label=<<b>Parameter 3</b><br/>s64[10000]>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbae82", fillcolor="#ffe0b2"];
+140175364487536 [label=<<b>equal-to.1</b><br/>pred[10000]>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364488720 [label=<<b>convert.1</b><br/>f32[10000]>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#cbc693", fillcolor="#fff9c4"];
+140175364489920 [label=<<b>reduce.2</b><br/>Subcomputation: <b>add</b><br/>dimensions={0}<br/>f32[]<br/><b>operand 1</b> = 0 (f32[])>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="#af8eb5", fillcolor="#e1bee7"];
+140175364496192 [label=<<b>tuple.1</b><br/>(f32[])>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="black", fillcolor="white"];
+140175364506384 [label=<<b>multiply</b><br/>f32[]<br/><b>operand 1</b> = 0.0001 (f32[])>, shape=rect, tooltip=" ", style="filled", fontcolor="black", color="black", fillcolor="white"];
+cluster_140175364480368 [label=<ROOT>, shape=circle, tooltip=" ", style="filled", fontcolor="black", color="#8c7b75", fillcolor="#bcaaa4"];
+140175364415776 -> 140175364430736 [tooltip="arg2 -> dot"  headlabel="0", labeldistance=2];
+140175364416752 -> 140175364430736 [tooltip="arg1 -> dot"  headlabel="1", labeldistance=2];
+140175364432208 -> 140175364471792 [tooltip="arg0 -> broadcast" ];
+140175364430736 -> 140175364472528 [tooltip="dot -> add.1"  headlabel="0", labeldistance=2];
+140175364471792 -> 140175364472528 [tooltip="broadcast -> add.1"  headlabel="1", labeldistance=2];
+140175364472528 -> 140175364474000 [tooltip="add.1 -> reduce"  headlabel="0", labeldistance=2];
+140175364474000 -> 140175364474736 [tooltip="reduce -> broadcast.1" ];
+140175364472528 -> 140175364475472 [tooltip="add.1 -> equal-to"  headlabel="0", labeldistance=2];
+140175364474736 -> 140175364475472 [tooltip="broadcast.1 -> equal-to"  headlabel="1", labeldistance=2];
+140175364475472 -> 140175364476208 [tooltip="equal-to -> convert" ];
+140175364476208 -> 140175364478416 [tooltip="convert -> shift-left"  headlabel="0", labeldistance=2];
+140175364477680 -> 140175364478416 [tooltip="broadcast.2 -> shift-left"  headlabel="1", labeldistance=2];
+140175364478416 -> 140175364480544 [tooltip="shift-left -> shift-right-arithmetic"  headlabel="0", labeldistance=2];
+140175364479344 -> 140175364480544 [tooltip="broadcast.3 -> shift-right-arithmetic"  headlabel="1", labeldistance=2];
+140175364480544 -> 140175364484032 [tooltip="shift-right-arithmetic -> and"  headlabel="0", labeldistance=2];
+140175364482832 -> 140175364484032 [tooltip="broadcast.4 -> and"  headlabel="1", labeldistance=2];
+140175364484032 -> 140175364485072 [tooltip="and -> reduce.1"  headlabel="0", labeldistance=2];
+140175364485072 -> 140175364487536 [tooltip="reduce.1 -> equal-to.1"  headlabel="0", labeldistance=2];
+140175364486464 -> 140175364487536 [tooltip="arg3 -> equal-to.1"  headlabel="1", labeldistance=2];
+140175364487536 -> 140175364488720 [tooltip="equal-to.1 -> convert.1" ];
+140175364488720 -> 140175364489920 [tooltip="convert.1 -> reduce.2"  headlabel="0", labeldistance=2];
+140175364506384 -> 140175364496192 [tooltip="multiply -> tuple.1" ];
+140175364489920 -> 140175364506384 [tooltip="reduce.2 -> multiply"  headlabel="0", labeldistance=2];
+140175364496192 -> cluster_140175364480368 [tooltip=" "];
+}
