@@ -44,11 +44,11 @@ Compare this to timeline without xla, all primary computation was concluded into
 
 During the process, some `.dot` file was created inside the specified directory, which contains informations about the graphs created by XLA(see folder `BenchmarkAndTests/dots`). By reviewing `.dot` files from No.0 to No.85, the process that XLA takes to fuse Ops can be noticed.
 
-`hlo_graph_0.dot`:![](0.svg)
+`hlo_graph_0.dot`:![](0.png)
 
 `hlo_graph_85.dot`:
 
-![](85.svg)
+![](85.png)
 
 We can see that operations in the final result is much less than the origin input graph. At the head of each `.dot` file, there are optimizations or simplifications that XLA did.
 
