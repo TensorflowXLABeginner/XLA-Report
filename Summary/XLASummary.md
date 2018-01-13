@@ -44,3 +44,14 @@ In this project, we will do a small research on XLA, which covers in
 
 
 - [x] We have done full benchmark and profiling for JIT compilation on V100 cluster. Compiler optimization
+
+### Reference
+
+[TensorFlow Programming](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/Accelerated%20Linear%20Algebra%20Intro.md)
+
+[XLA Overview](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/Accelerated%20Linear%20Algebra%20Intro.md)
+
+[XLA Just-in-time Compilation](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/xla_Just-in-time%20compilation.md)
+
+[XLA Ahead-of-time Compilation](https://www.tensorflow.org/performance/xla/tfcompile)
+
