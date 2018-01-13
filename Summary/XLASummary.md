@@ -43,7 +43,11 @@ In this project, we will do a small research on XLA, which covers in
 - [x] Build our XLA on multiple platform. Including CPU version on PC, GPU version by **CUDA 8.0** on PC (**Nvidia GTX 970M**), GPU version by CUDA 9.0 on high performance cluster (**Nvidia Tesla V100**), GPU version AOT compilation for x86-64 and **ARM**.
 
 
-- [x] We have done full benchmark and profiling for JIT compilation on V100 cluster. Compiler optimization
+- [x] We have done full benchmark and profiling for JIT compilation on V100 cluster. Compiler optimization. [Link](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/JIT_Compilation/XLA%20JIT%20Benchmark.md)
+- [x] AOT compilation is used mainly on mobile platform, we have do research on AOT with AMD card and the usage of it. [See report.](https://github.com/TensorflowXLABeginner/XLA-Report/tree/master/AOT_Compilation)
+- [x] Boardcasting is widely used in XLA to provide more support for flexible matrix operation, research of it can be found in our repository. [Link](https://github.com/TensorflowXLABeginner/XLA-Report/tree/master/Broadcast)
+- [x] Communicate with team NNVM and team Darkroom. [Link](https://github.com/TensorflowXLABeginner/XLA-Report/tree/master/Communications)
+- [x] Made our [final report](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/Presentation/xla.pptx).
 
 ### Reference
 
