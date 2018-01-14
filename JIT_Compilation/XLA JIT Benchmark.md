@@ -53,3 +53,11 @@ During the process, some `.dot` file was created inside the specified directory,
 We can see that operations in the final result is much less than the origin input graph. At the head of each `.dot` file, there are optimizations or simplifications that XLA did.
 
 Inside the final dot file, each subgraph means that XLA fused multiple operators(kernel fusion) into a small number of compiled kernels, which is the main benefit of XLA with JIT. This helps reduce memory bandwidth requirements and improve performance compared to executing operators one-at-a-time, as TensorFlow executor does.
+
+In fact, how does XLA actually work in general case. Here is some benchmarks about XLA works in GPU under some common ML model.
+
+![](benchmark.png)
+
+As you can see, the performance in GPU for common models improves significantly for the cases that not only inference but also training. However, in CPU, it does not behave that well. As the developer of XLA says, this is because XLA is still in experiment phase. Simply not enough time for them to optimize code in CPU.
+
+ ![](benchmark_cpu.png)
